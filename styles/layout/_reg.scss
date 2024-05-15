@@ -1,0 +1,13 @@
+@use "../base/colors";
+
+.reg {
+    background-color: colors.$white;
+    border-radius: 20px;
+    padding: 20px;
+
+    &__heading{
+        display: flex; 
+justify-content: space-between;
+align-items: center;
+    }
+}

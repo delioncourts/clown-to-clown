@@ -1,0 +1,35 @@
+@use '../base/colors';
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.button {
+  padding: 0;
+  border: none;
+  background-color: colors.$green;
+  color: colors.$white;
+  transition: 0.3s linear;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 150px;
+
+  &:hover {
+    background-color: colors.$buttonhover;
+    transition: 0.3s linear;
+  }
+
+  &_alert{
+    background-color: colors.$alert;
+    color: colors.$black;
+    &:hover{
+        background-color: colors.$alerthover;
+        transition: 0.3s linear;
+    }
+  }
+}
