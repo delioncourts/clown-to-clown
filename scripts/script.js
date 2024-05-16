@@ -7,7 +7,6 @@ popupOpenButton.addEventListener('click', () => {
             document.addEventListener("mousedown", closePopupOverlay);
 })
 
-
 function closePopup() {
     popup.classList.remove('popup_opened');
     document.removeEventListener("keydown", closePopupEsc);

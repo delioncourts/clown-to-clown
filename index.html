@@ -1,41 +1,53 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HELLO</title>
-    <link rel="stylesheet" href="./styles/style.css">
-</head>
-<body class="body">
-<main class="main">
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body class="body">
+    <main class="main">
+      <section class="reg container">
+        <div class="reg__heading">
+          <h1 class="reg__title">РЕГИСТРАЦИЯ</h1>
+          <img src="./images/cross.svg" class="reg__cross cross" alt="oh no" />
+        </div>
+        <h2 class="reg__subtitle">Вызвать санитара</h2>
 
-<section class="reg container">
-    <div class="reg__heading">
-<h1>РЕГИСТРАЦИЯ</h1>
-<img src="./images/cross.svg" class="cross" alt="oh no"/>
-</div>
-<h2>Вызвать санитара</h2>
+        <div class="reg__inputs">
+          <label class="reg__label" for="hleb">Какой вы сегодня хлеб?</label>
+          <input
+            class="reg__input"
+            type="text"
+            id="hleb"
+            name="hleb"
+            value="САМЫЙ ЛУЧШИЙ"
+            disabled
+          />
+        </div>
+        <div class="buttons">
+          <button class="zhmav button" type="button">ЖМАВ</button>
+          <button class="send button" type="button">Отправить</button>
+        </div>
 
+        <div class="reg__send">
+          <img src="./images/clown.png" class="reg__clown" />
+          <p class="reg__text">У НАС БИЗНЕС</p>
+        </div>
+      </section>
+    </main>
 
-<label for="hleb">Какой вы сегодня хлеб?</label>
-<input type="text" id="hleb" name="hleb" value="ЛУЧШИЙ КЛОУН НА ПЛАНЕТЕ " disabled>
+    <article class="popup">
+      <div class="popup__container">
+        <b class="popup__text">Попался!</b>
+        <b class="popup__text">Санитар уже выехал</b>
+        <img class="popup__image" src="./images/rat.png" />
+      </div>
+    </article>
 
-<div class="buttons">
-<button class="zhmav button" type="button">ЖМАВ</button>
-<button class="button" type="button">Отправить</button>
-</div>
-</section>
-
-</main>
-
-<article class="popup">
-    <div class="popup__container">
-        <h2>Попался! Санитар уже выехал</h2>
-    </div>
-</article>
-
-<script src="./scripts/script.js"></script>
-<script src="./scripts/buttons.js"></script>
-</body>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/buttons.js"></script>
+  </body>
 </html>

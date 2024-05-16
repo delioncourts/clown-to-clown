@@ -1,13 +1,91 @@
-@use "../base/colors";
+@use '../base/colors';
 
 .reg {
-    background-color: colors.$white;
-    border-radius: 20px;
-    padding: 20px;
+  background-color: colors.$white;
+  border-radius: 20px;
+  padding: 20px;
 
-    &__heading{
-        display: flex; 
-justify-content: space-between;
-align-items: center;
-    }
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    line-height: 20px;
+    padding-top: 10px;
+  }
+
+  &__cross {
+    width: 18px;
+    height: 18px;
+  }
+
+  &__inputs {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__send {
+    padding-top: 20px;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  &__visible {
+    display: flex;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__clown {
+    width: 80px;
+    height: 80px;
+
+    -webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+  }
+
+  &__label {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  &__input {
+    padding: 5px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
